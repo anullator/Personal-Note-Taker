@@ -9,11 +9,11 @@ notes.get('/', (req, res) => {
 
 // Post route to add new note
 notes.post('/', (req, res) => {
-    console.log(req.body);
 
-    const { title, text } = req.body;
+    if (req.body.title) {
+        console.log(req.body);
+        const { title, text } = req.body;
 
-    if (req.body) {
         const newNote = {
             title,
             text,
@@ -23,8 +23,13 @@ notes.post('/', (req, res) => {
         readAndAppend(newNote, './db/db.json');
         res.json(`Note added successfully`);
     } else {
-        res.error('Error adding note');
+        res.json('Error adding note');
     }
+});
+
+notes.delete('/:id', (req, res) => {
+    const { id } = req.params;
+    const data = readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
 module.exports = notes;
