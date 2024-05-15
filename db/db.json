@@ -1,2 +1,12 @@
 [
+    {
+        "title": "My First Note",
+        "text": "Successfully created notes application!",
+        "id": "e3bb5d4b-a2b1-443f-83d5-354635f900c0"
+    },
+    {
+        "title": "Watch Deadpool & Wolverine",
+        "text": "In Theaters July 26th!",
+        "id": "25d18bdb-789a-4c62-b57f-2ecdda75f396"
+    }
 ]
