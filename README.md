@@ -15,7 +15,7 @@ Open the Note Taker application using the below link. Click 'Get Started' and be
 
 ![Screenshot of note taking application](./assets/note-taking-screenshot.png)
 
-This is the link to the deployed webpage: \_https://personal-note-taker.onrender.com\_
+This is the link to the deployed webpage: _https://personal-note-taker.onrender.com_
 
 ## Credits
 
